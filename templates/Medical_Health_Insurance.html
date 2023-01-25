@@ -1,0 +1,41 @@
+<html>
+<head>
+       <title>Medical health Insurance</title>
+</head>
+<body bgcolor="orange">
+<center>
+<h1> Medical Health Insurance Form</h1>
+</center>
+<form action="http://127.0.0.1:5000/predict_charges" method="POST">
+<p><b><h3>User Name:</h3></b></p>
+<input type="text" name="name" placeholder="Enter Name"/>
+
+<p><b><h3>Age: </h3></b></p>
+<input type="text" name="age" placeholder="Age"/>
+
+<p><b><h3>Sex: </h3></b></p>
+<input type="radio" name="sex" value="male"/>Male
+<input type="radio" name="sex" value="female" />Female
+
+<p><b><h3>BMI: </h3></b></p>
+<input type="text" name="bmi" placeholder="BMI"/>
+
+<p><b><h3>Children: </h3></b></p>
+<input type="text" name="children" placeholder=0 />
+
+<p><b><h3>Smoker: </h3></b></p>
+<input type="radio" name="smoker" value= "yes" />Yes
+<input type="radio" name="smoker" value ="no" /> No
+
+<p><b><h3>Region: </h3></b></p>
+<select name="region">
+	<option value= "northeast"> Northeast </option>
+	<option value= "northwest"> Northwest </option>
+	<option value= "southeast"> Southeast </option>
+	<option value= "southwest"> Southwest </option>
+
+</select>
+<br><br><button type="submit">Charges Calculator</button></br></br>
+</form>
+</body>
+</html>
